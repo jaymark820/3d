@@ -1,26 +1,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="reveal/css/reveal.css">
-        <link rel="stylesheet" href="reveal/css/theme/white.css">
+        <link rel="stylesheet" href="reveal/css/theme/league.css">
         <script src="reveal/lib/js/head.min.js"></script> 
     </head>
     <body>
         <div class="reveal">
             <div class="slides">
-                <section data-markdown="README.md">
-                </section>
-                <section>
-                    <script type="text/template">
-                        ## Page title
-                 
-                        A paragraph with some text and a [link](http://hakim.se).
-                    </script> 
-                </section>
+                <section data-markdown="docs/lesson01.md"></section>
+                <section data-markdown="docs/lesson02.md"></section>
             </div>
         </div>
         <script src="reveal/js/reveal.js"></script> 
         <script>
             Reveal.initialize({
+                previewLinks: true,
+                slideNumber: true,
+                history: true,
+                transition: 'convex', // none/fade/slide/convex/concave/zoom
+                transitionSpeed: 'fast', 
                 dependencies: [
                     // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/ 
                     { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -41,14 +39,6 @@
                     // MathJax 
                     { src: 'reveal/plugin/math/math.js', async: true }
                 ]
-            });
-
-            Reveal.configure({
-              keyboard: {
-                13: 'next', // go to the next slide when the ENTER key is pressed 
-                27: function() {}, // do something custom when ESC is pressed 
-                32: null // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding) 
-              }
             });
         </script> 
     </body>
