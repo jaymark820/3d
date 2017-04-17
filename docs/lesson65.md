@@ -8,4 +8,3 @@ xxx.castShadow = true;
 对于接收阴影的物体调用：
 xxx.receiveShadow = true;
 ```
-
