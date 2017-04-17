@@ -28,3 +28,5 @@ function init() {
     renderer.render(scene, camera);
 }
 ```
+
+ - [查看运行效果](https://majieco.github.io/3d/example/demo/1.2.1.html)
